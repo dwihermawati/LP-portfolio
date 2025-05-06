@@ -1,8 +1,8 @@
-import { Section } from '@/components/layouts/section';
+import React from 'react';
+import Image from 'next/image';
+
 import { Marquee } from '@/components/ui/marquee';
 import { testimonialsData } from '@/constants/testimonials-data';
-import Image, { StaticImageData } from 'next/image';
-import React from 'react';
 
 export const Testimonials: React.FC = () => {
   return (

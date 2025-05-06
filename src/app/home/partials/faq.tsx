@@ -1,11 +1,14 @@
-import { Section } from '@/components/layouts/section';
 import React from 'react';
+
+import { Section } from '@/components/layouts/section';
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+
 import { FAQData } from '@/constants/faq-data';
 
 export const FAQ: React.FC = () => {

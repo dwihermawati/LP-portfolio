@@ -1,8 +1,8 @@
+import React from 'react';
+
 import { Section } from '@/components/layouts/section';
 import SkillsBar from '@/components/ui/skillsBar';
 import SkillsOrbit from '@/components/ui/skillsOrbit';
-
-import React from 'react';
 
 export const Skills: React.FC = () => {
   return (

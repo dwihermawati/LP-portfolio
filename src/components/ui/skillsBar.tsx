@@ -1,7 +1,8 @@
 'use client';
 
-import { skillsData } from '@/constants/skills-data';
 import { motion } from 'framer-motion';
+
+import { skillsData } from '@/constants/skills-data';
 
 const SkillsBar: React.FC = () => {
   return (

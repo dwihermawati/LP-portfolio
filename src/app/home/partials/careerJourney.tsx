@@ -2,12 +2,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+
+import { Icon } from '@iconify/react';
+
+import { Section } from '@/components/layouts/section';
 import {
   careerJourney,
   CareerJourneyProps,
 } from '@/constants/career-journey-data';
-import { Section } from '@/components/layouts/section';
-import { Icon } from '@iconify/react';
 
 export const CareerJourney: React.FC = () => {
   return (

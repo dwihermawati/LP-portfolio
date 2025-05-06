@@ -1,9 +1,10 @@
 'use client';
 
+import React from 'react';
+import { motion } from 'framer-motion';
+
 import { statisticsAboutExperience } from '@/constants/about-experience-data';
 import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
-import React from 'react';
 
 const AboutExperience: React.FC = () => {
   return (

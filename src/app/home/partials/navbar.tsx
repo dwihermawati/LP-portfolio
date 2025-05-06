@@ -1,10 +1,11 @@
 'use client';
 
-import { Menu } from 'lucide-react';
-import { motion, useScroll, useTransform } from 'motion/react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+
+import { Menu } from 'lucide-react';
+import { motion, useScroll, useTransform } from 'motion/react';
 
 import { Button } from '@/components/ui/button';
 import {

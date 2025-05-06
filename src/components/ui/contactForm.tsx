@@ -1,16 +1,18 @@
 'use client';
 
-import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import emailjs from '@emailjs/browser';
 import { BeatLoader } from 'react-spinners';
-import ContactDialog from './contactDialog';
+
 import { Form, FormField, FormItem, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from './button';
+
+import ContactDialog from './contactDialog';
 
 const contactSchema = z.object({
   name: z

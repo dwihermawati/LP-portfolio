@@ -1,4 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
+
+import { Button } from './button';
 import {
   Dialog,
   DialogBody,
@@ -8,8 +11,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from './dialog';
-import Image from 'next/image';
-import { Button } from './button';
 
 interface ContactDialogProps extends React.ComponentProps<typeof Dialog> {
   loading?: boolean;

@@ -1,10 +1,11 @@
-import { Button } from '@/components/ui/button';
-
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
-import { About } from './about';
+
+import { Button } from '@/components/ui/button';
 import HeroBgDecorations from '@/components/ui/heroBgDecorations';
+
+import { About } from './about';
 
 export const Hero: React.FC = () => {
   return (

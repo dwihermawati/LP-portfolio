@@ -1,8 +1,6 @@
-// import { Icon } from '@iconify/react';
-// import { StaticImageData } from 'next/image';
-// import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import GradientArrowIcon from '../../../public/Icons/GradientArrowIcon';
 
 type CardsProps = {

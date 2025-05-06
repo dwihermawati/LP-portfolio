@@ -2,8 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import Dot from '@/components/ui/dot-orbit';
+
 import { skillsData } from '@/constants/skills-data';
+import Dot from '@/components/ui/dot-orbit';
 
 const ORBITS = [
   { dotAngles: [180], sizeMobile: 145, sizeDesktop: 266 },

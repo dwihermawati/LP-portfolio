@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 
-import { skillsData } from '@/constants/skills-data';
 import Dot from '@/components/ui/dot-orbit';
+import { skillsData } from '@/constants/skills-data';
+import Image from 'next/image';
 
 const ORBITS = [
   { dotAngles: [180], sizeMobile: 145, sizeDesktop: 266 },
@@ -53,7 +54,14 @@ const Icon = ({ angle, radius, src, isDesktop }: IconProps) => {
       animate={{ rotate: -360 }}
       transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
     >
-      <img src={src} className='h-full w-full object-contain' />
+      <Image
+        src={src}
+        alt='icon'
+        width={0}
+        height={0}
+        sizes='100vw'
+        className='h-full w-full object-contain'
+      />
     </motion.div>
   );
 };

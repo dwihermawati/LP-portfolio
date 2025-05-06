@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
@@ -27,7 +26,7 @@ export const Hero: React.FC = () => {
               }}
             />
             <span className='text-xs-medium md:text-md-medium text-neutral-100'>
-              Alex's Portfolio
+              Alex Portfolio
             </span>
           </div>
         </div>

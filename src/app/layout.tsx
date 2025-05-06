@@ -1,5 +1,5 @@
-import { Poppins } from 'next/font/google';
 import type { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
 import './globals.css';
 import clsx from 'clsx';
 

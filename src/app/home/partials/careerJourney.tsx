@@ -1,7 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import { Section } from '@/components/layouts/section';

@@ -1,11 +1,11 @@
 'use client';
 
-import Image from 'next/image';
 import { Icon } from '@iconify/react';
+import Image from 'next/image';
 import React, { useState } from 'react';
 
-import { cn } from '@/lib/utils';
 import AboutExperience from '@/components/ui/AboutExperience';
+import { cn } from '@/lib/utils';
 
 export const About: React.FC = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);

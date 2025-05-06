@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
 import React from 'react';
 
 import { socialMediaData } from '@/constants/social-media-data';

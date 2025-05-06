@@ -5,6 +5,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 import AboutExperience from '@/components/ui/AboutExperience';
+
 import { cn } from '@/lib/utils';
 
 export const About: React.FC = () => {

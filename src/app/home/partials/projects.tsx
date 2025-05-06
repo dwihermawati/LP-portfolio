@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Card, Cards } from '@/components/ui/card';
+
 import { projectsData } from '@/constants/projects-data';
 
 export const Projects: React.FC = () => {

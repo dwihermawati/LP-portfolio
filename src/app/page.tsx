@@ -1,4 +1,3 @@
-import { About } from './home/partials/about';
 import { CareerJourney } from './home/partials/careerJourney';
 import { Contact } from './home/partials/contact';
 import { FAQ } from './home/partials/faq';
@@ -15,7 +14,6 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-      {/* <About /> */}
       <CareerJourney />
       <Skills />
       <WhyMe />

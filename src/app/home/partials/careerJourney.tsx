@@ -1,11 +1,11 @@
 'use client';
 
-import React from 'react';
 import { motion } from 'framer-motion';
-
 import { Icon } from '@iconify/react';
+import React from 'react';
 
 import { Section } from '@/components/layouts/section';
+
 import {
   careerJourney,
   CareerJourneyProps,

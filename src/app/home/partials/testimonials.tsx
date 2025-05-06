@@ -1,7 +1,8 @@
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
 
 import { Marquee } from '@/components/ui/marquee';
+
 import { testimonialsData } from '@/constants/testimonials-data';
 
 export const Testimonials: React.FC = () => {

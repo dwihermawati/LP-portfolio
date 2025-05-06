@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ContactForm from '@/components/ui/contactForm';
 
 export const Contact: React.FC = () => {

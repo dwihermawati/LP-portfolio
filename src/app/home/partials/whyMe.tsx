@@ -1,7 +1,8 @@
-import React from 'react';
 import { Icon } from '@iconify/react';
+import React from 'react';
 
 import { Section } from '@/components/layouts/section';
+
 import { whyMe } from '@/constants/why-me-data';
 
 export const WhyMe: React.FC = () => {

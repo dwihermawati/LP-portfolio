@@ -1,11 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 import Dot from '@/components/ui/dot-orbit';
+
 import { skillsData } from '@/constants/skills-data';
-import Image from 'next/image';
 
 const ORBITS = [
   { dotAngles: [180], sizeMobile: 145, sizeDesktop: 266 },

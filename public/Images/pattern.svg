@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1432"
+   height="765"
+   viewBox="0 0 1432 765"
+   fill="none"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="pattern.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.6388119"
+     inkscape:cx="1360.4607"
+     inkscape:cy="247.64933"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <g
+     opacity="0.2"
+     clip-path="url(#clip0_10601_3434)"
+     id="g16">
+    <mask
+       id="mask0_10601_3434"
+       maskUnits="userSpaceOnUse"
+       x="0"
+       y="0"
+       width="2747"
+       height="2747"
+       style="mask-type:alpha">
+      <rect
+         width="2746.74"
+         height="2746.74"
+         fill="url(#paint0_radial_10601_3434)"
+         id="rect1" />
+    </mask>
+    <g
+       mask="url(#mask0_10601_3434)"
+       id="g15">
+      <g
+         clip-path="url(#clip1_10601_3434)"
+         id="g14">
+        <g
+           clip-path="url(#clip2_10601_3434)"
+           id="g9">
+          <line
+             x1="153.551"
+             x2="153.551"
+             y2="763"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line1" />
+          <line
+             x1="306.147"
+             x2="306.147"
+             y2="763"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line2" />
+          <line
+             x1="458.744"
+             x2="458.744"
+             y2="763"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line3" />
+          <line
+             x1="611.341"
+             x2="611.341"
+             y2="763"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line4" />
+          <line
+             x1="763.938"
+             x2="763.938"
+             y2="763"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line5" />
+          <line
+             x1="916.535"
+             x2="916.535"
+             y2="763"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line6" />
+          <line
+             x1="1069.13"
+             x2="1069.13"
+             y2="763"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line7" />
+          <line
+             x1="1221.73"
+             x2="1221.73"
+             y2="763"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line8" />
+          <line
+             x1="1374.33"
+             x2="1374.33"
+             y2="763"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line9" />
+        </g>
+        <g
+           clip-path="url(#clip3_10601_3434)"
+           id="g13">
+          <line
+             y1="151.643"
+             x2="1431"
+             y2="151.643"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line10" />
+          <line
+             y1="304.24"
+             x2="1431"
+             y2="304.24"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line11" />
+          <line
+             y1="456.837"
+             x2="1431"
+             y2="456.837"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line12" />
+          <line
+             y1="609.433"
+             x2="1431"
+             y2="609.433"
+             stroke="#545357"
+             stroke-width="1.90746"
+             id="line13" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs
+     id="defs20">
+    <radialGradient
+       id="paint0_radial_10601_3434"
+       cx="0"
+       cy="0"
+       r="1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1373.37 -0.000327437) rotate(90) scale(2746.74 1433.62)">
+      <stop
+         id="stop16" />
+      <stop
+         offset="0.953125"
+         stop-opacity="0"
+         id="stop17" />
+    </radialGradient>
+    <clipPath
+       id="clip0_10601_3434">
+      <rect
+         width="1440"
+         height="765"
+         fill="white"
+         id="rect17" />
+    </clipPath>
+    <clipPath
+       id="clip1_10601_3434">
+      <rect
+         width="1431"
+         height="763"
+         fill="white"
+         id="rect18" />
+    </clipPath>
+    <clipPath
+       id="clip2_10601_3434">
+      <rect
+         width="1431"
+         height="763"
+         fill="white"
+         id="rect19" />
+    </clipPath>
+    <clipPath
+       id="clip3_10601_3434">
+      <rect
+         width="1431"
+         height="729"
+         fill="white"
+         id="rect20" />
+    </clipPath>
+  </defs>
+</svg>

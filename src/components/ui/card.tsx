@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
 import GradientArrowIcon from '../../../public/Icons/GradientArrowIcon';
@@ -14,7 +14,7 @@ export const Cards: React.FC<CardsProps> = ({ children }) => {
 };
 
 type CardProps = {
-  imageSrc: string;
+  imageSrc: StaticImageData;
   name: string;
   description: string;
   stack: string[];
@@ -31,9 +31,6 @@ export const Card: React.FC<CardProps> = ({
       <Image
         src={imageSrc}
         alt={name}
-        width={0}
-        height={0}
-        sizes='100vw'
         className='h-full w-full cursor-pointer rounded-3xl object-contain md:rounded-4xl'
       />
       <div className='flex flex-col gap-3 md:gap-10'>

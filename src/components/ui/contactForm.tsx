@@ -12,7 +12,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
 import { Button } from './button';
-import ContactDialog from './contactDialog';
+import FormStatusDialog from './formStatusDialog';
 
 const contactSchema = z.object({
   name: z
@@ -37,6 +37,7 @@ const contactSchema = z.object({
 const ContactForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [showDialog, setShowDialog] = useState(false);
+  const [variant, setVariant] = React.useState<'success' | 'error'>('success');
 
   const form = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
@@ -61,29 +62,17 @@ const ContactForm: React.FC = () => {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
       form.reset();
+      setVariant('success');
     } catch (error) {
-      console.error('Error sending email:', error);
+      if (process.env.NODE_ENV !== 'production') {
+        console.error('Error sending email:', error);
+      }
+      setVariant('error');
     } finally {
       setShowDialog(true);
       setLoading(false);
     }
   }
-
-  // const onSubmit = async (data: z.infer<typeof contactSchema>) => {
-  //   try {
-  //     setLoading(true);
-
-  //     await new Promise((resolve) => setTimeout(resolve, 1000));
-
-  //     console.log('Mock submission success:', data);
-  //     form.reset();
-  //   } catch (error) {
-  //     console.error('Mock error:', error);
-  //   } finally {
-  //     setShowDialog(true);
-  //     setLoading(false);
-  //   }
-  // };
 
   return (
     <>
@@ -144,8 +133,9 @@ const ContactForm: React.FC = () => {
           </Button>
         </form>
       </Form>
-      <ContactDialog
+      <FormStatusDialog
         open={showDialog}
+        variant={variant}
         loading={loading}
         onOpenChange={setShowDialog}
       />

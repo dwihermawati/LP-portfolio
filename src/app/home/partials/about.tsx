@@ -49,7 +49,7 @@ export const About: React.FC = () => {
               title='Youtube Video'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
               allowFullScreen
-              className='h-full w-full rounded-[12px] bg-transparent p-4 md:rounded-[24px]'
+              className='h-full w-full rounded-[12px] bg-transparent p-1 md:rounded-[24px] md:p-3'
             ></iframe>
           </div>
         )}

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 
 import { Marquee } from '@/components/ui/marquee';
@@ -60,7 +60,7 @@ export const Testimonials: React.FC = () => {
 
 type TestimonialCardProps = {
   description: string;
-  profileSrc: string;
+  profileSrc: StaticImageData;
   profileName: string;
   profileOccupation: string;
 };
@@ -82,9 +82,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           <Image
             src={profileSrc}
             alt={profileName}
-            width={48}
-            height={48}
-            className='md:size-15'
+            className='size-12 md:size-15'
           />
           <div>
             <p className='text-sm-bold md:text-md-bold text-neutral-100'>

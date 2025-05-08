@@ -12,11 +12,16 @@ import {
   DialogTitle,
 } from './dialog';
 
-interface ContactDialogProps extends React.ComponentProps<typeof Dialog> {
+interface FormStatusDialogProps extends React.ComponentProps<typeof Dialog> {
+  variant: 'success' | 'error';
   loading?: boolean;
 }
 
-const ContactDialog: React.FC<ContactDialogProps> = ({ loading, ...props }) => {
+const FormStatusDialog: React.FC<FormStatusDialogProps> = ({
+  variant,
+  loading,
+  ...props
+}) => {
   return (
     <Dialog {...props}>
       <DialogContent>
@@ -31,17 +36,27 @@ const ContactDialog: React.FC<ContactDialogProps> = ({ loading, ...props }) => {
 
           {/* Ilustrasi utama */}
           <Image
-            src='/Icons/ilustrasi-dialog-form.svg'
-            alt='form'
+            src={
+              variant === 'success'
+                ? '/Icons/ilustrasi-dialog-form-success.svg'
+                : '/Icons/ilustrasi-dialog-form-error.svg'
+            }
+            alt={variant === 'success' ? 'success' : 'error'}
             width={124}
             height={119}
             className='relative z-10 mx-auto md:h-40.5 md:w-[168.8px]'
           />
         </DialogHeader>
         <DialogBody>
-          <DialogTitle>Message Sent Successfully!</DialogTitle>
+          <DialogTitle>
+            {variant === 'success'
+              ? 'Message Sent Successfully!'
+              : 'Message failed to send.'}
+          </DialogTitle>
           <DialogDescription>
-            Thank you for reaching out. I’ll get back to you as soon as possible
+            {variant === 'success'
+              ? 'Thank you for reaching out. I’ll get back to you as soon as possible'
+              : 'An unexpected error occurred. Kindly try again in a few moments.'}
           </DialogDescription>
           <DialogClose asChild>
             <Button className='mb-8 w-full md:mb-10'>
@@ -54,4 +69,4 @@ const ContactDialog: React.FC<ContactDialogProps> = ({ loading, ...props }) => {
   );
 };
 
-export default ContactDialog;
+export default FormStatusDialog;

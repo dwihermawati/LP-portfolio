@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image';
+
 import profile1Src from '../../public/Images/testimoni1.png';
 import profile2Src from '../../public/Images/testimoni2.png';
 import profile3Src from '../../public/Images/testimoni3.png';

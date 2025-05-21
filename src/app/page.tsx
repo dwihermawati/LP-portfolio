@@ -14,7 +14,7 @@ import { WhyMe } from './home/partials/whyMe';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <HeroRevisi />
       <About />
@@ -26,7 +26,7 @@ const Home = () => {
       <FAQ />
       <ContactRevisi />
       <Footer />
-    </div>
+    </>
   );
 };
 

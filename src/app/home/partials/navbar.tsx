@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/sheet';
 
 import { navigationData } from '@/constants/navigation-data';
+import { generateClamp } from '@/function/generate-clamp';
 
 export const Navbar = () => {
   const { scrollY } = useScroll();
@@ -38,7 +39,10 @@ export const Navbar = () => {
       }}
       className='fixed top-0 z-50 w-full'
     >
-      <div className='flex-between custom-container h-16 md:h-21'>
+      <div
+        className='custom-container flex h-16 items-center justify-between md:h-21'
+        style={{ height: generateClamp(64, 84, 1224) }}
+      >
         {/* <div className='before-bg-ellipse2 absolute top-0 left-0'></div> */}
         <Link
           href='#home'
@@ -47,9 +51,10 @@ export const Navbar = () => {
           <Image
             src='/Images/logo.png'
             alt='logo'
-            width={40}
-            height={40}
-            className='max-md:size-7'
+            width={0}
+            height={0}
+            sizes='100vw'
+            style={{ width: generateClamp(28, 40, 1224), height: 'auto' }}
           />
         </Link>
         <nav className='hidden lg:block'>

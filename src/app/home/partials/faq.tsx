@@ -1,3 +1,5 @@
+// 'use client';
+
 import React from 'react';
 
 import { Section } from '@/components/layouts/section';
@@ -28,3 +30,39 @@ export const FAQ: React.FC = () => {
     </Section>
   );
 };
+
+// export const FAQ: React.FC = () => {
+//   const [openItem, setOpenItem] = React.useState<string | undefined>(undefined);
+
+//   return (
+//     <Section
+//       id='faq'
+//       title='Frequently Asked Question'
+//       subtitle='Find answers to some of the frequently asked questions below.'
+//     >
+//       <Accordion
+//         type='single'
+//         collapsible
+//         value={openItem ?? undefined}
+//         onValueChange={setOpenItem}
+//       >
+//         {FAQData.map((item, index) => {
+//           const value = index.toString();
+//           const isOpen = openItem === value;
+
+//           return (
+//             <AccordionItem
+//               key={value}
+//               value={value}
+//               onClick={() => setOpenItem(isOpen ? undefined : value)}
+//               className='cursor-pointer' // penting!
+//             >
+//               <AccordionTrigger>{item.title}</AccordionTrigger>
+//               <AccordionContent>{item.description}</AccordionContent>
+//             </AccordionItem>
+//           );
+//         })}
+//       </Accordion>
+//     </Section>
+//   );
+// };

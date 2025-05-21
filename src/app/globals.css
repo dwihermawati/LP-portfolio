@@ -61,6 +61,7 @@
   --color-primary-100: #d3bbfa;
   --color-primary-200: #8144df;
   --color-primary-300: #632abb;
+  --color-primary-400: #8746eb;
 
   --color-secondary-100: #dc49a666; /* 40% opacity version of #DC49A6 */
   --color-secondary-200: #dc49a6;
@@ -208,14 +209,16 @@ html {
 
 body {
   @apply bg-neutral-600 text-sm font-normal text-neutral-100;
-
-  font-family: var(--font-poppins);
+  font-family: 'Poppins', sans-serif;
+  /* font-family: var(--font-poppins); */
 }
 
 @layer components {
   .custom-container {
     margin: 0 auto;
-    @apply max-w-306 px-5 md:px-8;
+    @apply max-w-306;
+    padding-left: clamp(1.25rem, 2rem, 2.61vw);
+    padding-right: clamp(1.25rem, 2rem, 2.61vw);
   }
 }
 
@@ -237,29 +240,71 @@ body {
     box-shadow: 0 4px 24px 0 rgba(135, 70, 235, 0.32);
   }
 
-  /* .before-bg-blur::before {
+  /* .hero-ellipse-decoration::after {
     content: '';
-    @apply absolute top-0 right-1/2 z-10 h-[201px] w-[461px] -translate-x-[61%] transform bg-[url('/Images/blur-background.svg')] max-md:hidden;
+    @apply absolute top-0 right-0 z-[-1] bg-[url('/Images/hero-ellipse-decoration.svg')] bg-right bg-no-repeat;
+    height: clamp(407px, calc(407px + 19.58vw), 689px);
+    width: clamp(407.6px, calc(407.6px + 19.61vw), 690px);
   } */
-  /* .before-bg-blur2::before {
+
+  .header-ellipse-decoration::before {
     content: '';
-    @apply absolute top-32 right-9 z-[-1] h-[100%] w-[100%] bg-[url('/Images/blur-background2.svg')] bg-contain bg-no-repeat;
-  } */
-  /* .before-waves::before { 
+    @apply absolute top-0 right-1/2 z-[-1] h-[201px] w-[461px] translate-x-[-51%] transform bg-[url('/Images/header-ellipse-decoration.svg')] bg-no-repeat max-md:hidden;
+  }
+  .waves-hero::before {
     content: '';
-    @apply absolute top-[-200px] left-0 z-[-1] h-[338px] w-full bg-[url('/Images/waves.svg')] bg-contain bg-no-repeat;
-  } */
+    @apply absolute left-0 z-[-5] h-[380.7px] w-full bg-[url('/Images/waves.svg')] bg-contain bg-bottom bg-repeat-x;
+    bottom: clamp(-10rem, calc(-5rem - 0.074074 * (100vw - 360px)), -5rem);
+  }
+  .mask-hero::after {
+    content: '';
+    @apply absolute top-0 left-0 z-[-10] h-[2747px] w-full;
+    background-image: radial-gradient(
+      circle at top left,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 95%
+    );
+  }
+  @media (min-width: 768px) {
+    .mask-hero::after {
+      background-image: radial-gradient(
+        circle at top left,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 95%
+      );
+    }
+  }
+  .grid-hero::before {
+    content: '';
+    @apply absolute top-0 left-0 z-[-20] h-full w-full bg-[url('/Images/hero-grid-decoration.png')] bg-repeat;
+  }
+  .circle-hero::after {
+    content: '';
+    @apply absolute top-[18.17%] right-[8.6%] z-[-10] h-full w-full bg-[url('/Images/hero-circle-decoration.svg')] bg-right-top bg-repeat-x;
+  }
   .before-bg-blur3::before {
     content: '';
     @apply absolute top-1/2 right-1/2 z-[-1] h-[1969px] w-full translate-x-[28%] -translate-y-[38%] transform bg-[url('/Images/blur-background3.svg')] bg-contain bg-no-repeat;
   }
-  /* .before-bg-blur4::before {
+  /* .grid-contact::before {
     content: '';
-    @apply absolute -top-[70%] left-1/2 z-[-1] h-[517px] w-full translate-x-[32%] bg-[url('/Images/blur-background4.svg')] bg-contain bg-no-repeat;
+    @apply absolute right-0 bottom-0 z-[-1] h-full w-full border-2 border-red-500 bg-[url('/Images/contact-grid-decoration.png')] bg-contain bg-bottom-right bg-no-repeat;
+  }
+  .ellipse-contact::after {
+    content: '';
+    @apply absolute right-0 bottom-0 z-[-10] h-full w-[1440px] border-2 border-blue-500 bg-[url('/Images/contact-ellipse-decoration.png')] bg-contain bg-bottom-right bg-no-repeat;
   } */
   .before-bg-blur5::before {
     content: '';
-    @apply absolute right-0 -bottom-[15%] z-[-1] h-[1277px] w-[1418px] bg-[url('/Images/blur-background5.svg')] bg-contain bg-no-repeat;
+    @apply absolute right-0 -bottom-[15%] z-[-1] w-[1418px] bg-[url('/Images/blur-background5.svg')] bg-contain bg-bottom-right bg-no-repeat;
+    /* height: clamp(866px, 80vh, 1728px); */
+    height: clamp(866px, calc(0.386vw + 721.3px), 1277px);
+    /* width: clamp(357px, calc(0.996vw - 16.5px), 1418px); */
+  }
+  @media (min-width: 768px) {
+    .before-bg-blur5::before {
+      height: 1277px;
+    }
   }
 }
 

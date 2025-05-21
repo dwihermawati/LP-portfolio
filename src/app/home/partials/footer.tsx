@@ -7,7 +7,7 @@ import { socialMediaData } from '@/constants/social-media-data';
 export const Footer: React.FC = () => {
   return (
     <footer className='bg-neutral-500'>
-      <div className='custom-container flex flex-col justify-between gap-6 py-10 md:flex-row md:items-center'>
+      <div className='custom-container flex flex-col-reverse justify-between gap-6 py-10 md:flex-row md:items-center'>
         <div className='flex items-center gap-4'>
           <Link
             href='#home'

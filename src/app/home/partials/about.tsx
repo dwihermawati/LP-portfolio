@@ -17,7 +17,7 @@ export const About: React.FC = () => {
 
   return (
     <section
-      className='custom-container flex-center flex-col gap-10 py-10 md:gap-20 md:py-20 lg:mt-43.25'
+      className='custom-container flex-center flex-col gap-10 py-10 md:gap-20 md:py-20'
       id='about'
     >
       <div

@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
   return (
     <section className='relative overflow-hidden' id='home'>
       <HeroBgDecorations />
-      <div className='custom-container flex-center mt-26 flex-col gap-5 md:mt-55.5 md:gap-6'>
+      <div className='custom-container flex-center relative mt-26 flex-col gap-5 md:mt-55.5 md:gap-6'>
         <div className='shadow-purple-glow bg-gradient-purple-pink inline-block rounded-full p-[1px]'>
           <div className='flex-center gap-2 rounded-full bg-neutral-500 px-4 py-2 md:px-6'>
             <Image

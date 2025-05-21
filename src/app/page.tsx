@@ -1,8 +1,11 @@
+import { About } from './home/partials/about';
 import { CareerJourney } from './home/partials/careerJourney';
-import { Contact } from './home/partials/contact';
+// import { Contact } from './home/partials/contact';
+import { ContactRevisi } from './home/partials/contact-revisi';
 import { FAQ } from './home/partials/faq';
 import { Footer } from './home/partials/footer';
-import { Hero } from './home/partials/hero';
+// import { Hero } from './home/partials/hero';
+import { HeroRevisi } from './home/partials/hero-revisi';
 import { Navbar } from './home/partials/navbar';
 import { Projects } from './home/partials/projects';
 import { Skills } from './home/partials/skills';
@@ -13,14 +16,15 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <HeroRevisi />
+      <About />
       <CareerJourney />
       <Skills />
       <WhyMe />
       <Projects />
-      <FAQ />
       <Testimonials />
-      <Contact />
+      <FAQ />
+      <ContactRevisi />
       <Footer />
     </div>
   );

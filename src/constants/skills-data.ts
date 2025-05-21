@@ -44,7 +44,7 @@ export const skillsData: SkillData[] = [
   },
   {
     icon: '/Images/typescript.png',
-    label: 'typescript',
+    label: 'Typescript',
     value: 70,
     angleOffset: 300,
     orbitIndex: 2,

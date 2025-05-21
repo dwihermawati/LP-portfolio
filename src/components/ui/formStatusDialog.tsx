@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import { Button } from './button';
@@ -59,8 +60,10 @@ const FormStatusDialog: React.FC<FormStatusDialogProps> = ({
               : 'An unexpected error occurred. Kindly try again in a few moments.'}
           </DialogDescription>
           <DialogClose asChild>
-            <Button className='mb-8 w-full md:mb-10'>
-              {loading ? 'Loading...' : 'Back to Home'}
+            <Button asChild className='mb-8 w-full md:mb-10'>
+              <Link href='#home'>
+                {loading ? 'Loading...' : 'Back to Home'}
+              </Link>
             </Button>
           </DialogClose>
         </DialogBody>

@@ -9,9 +9,12 @@ import Dot from '@/components/ui/dot-orbit';
 import { skillsData } from '@/constants/skills-data';
 
 const ORBITS = [
-  { dotAngles: [180], sizeMobile: 145, sizeDesktop: 266 },
-  { dotAngles: [225, 340], sizeMobile: 209.88, sizeDesktop: 385 },
-  { dotAngles: [280, 90], sizeMobile: 280.75, sizeDesktop: 515 },
+  { dotAngles: [110], sizeMobile: 145, sizeDesktop: 266 },
+  { dotAngles: [60, 290], sizeMobile: 209.88, sizeDesktop: 385 },
+  { dotAngles: [200, 0], sizeMobile: 280.75, sizeDesktop: 515 },
+  // { dotAngles: [180], sizeMobile: 145, sizeDesktop: 266 },
+  // { dotAngles: [225, 340], sizeMobile: 209.88, sizeDesktop: 385 },
+  // { dotAngles: [280, 90], sizeMobile: 280.75, sizeDesktop: 515 },
 ];
 
 const useIsDesktop = () => {

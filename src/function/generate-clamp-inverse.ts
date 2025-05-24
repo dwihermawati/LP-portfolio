@@ -8,7 +8,7 @@ export const generateClampInverse = (
   const mobileRem = (mobilePx / 16).toFixed(2);
 
   // Define viewport range: from smallest (mobile) to largest (desktop)
-  const minVwPx = 320;
+  const minVwPx = 360;
   const maxVwPx = containerMaxPx;
 
   // Calculate how much the value should shrink per 1vw

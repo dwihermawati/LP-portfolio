@@ -9,7 +9,7 @@ export const Skills: React.FC = () => {
     <Section
       title='My Core Skill'
       subtitle='An overview of the key technologies and frameworks I specialize in'
-      className='before-bg-blur3 relative'
+      className='ellipse-skill relative'
       id='skills'
     >
       <div className='flex-center flex-wrap gap-6 md:gap-17'>

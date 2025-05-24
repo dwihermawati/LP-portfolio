@@ -1,55 +1,70 @@
-// import Image from 'next/image';
+'use client';
+
+import Image from 'next/image';
 import React from 'react';
 
-const HeroBgDecorations: React.FC = () => {
+import { generateClamp } from '@/function/generate-clamp';
+import { generateClampInverse } from '@/function/generate-clamp-inverse';
+
+export const HeroBgDecorations: React.FC = () => {
   return (
     <>
-      {/* <Image
-        src='/Images/pattern.svg'
-        alt='Pattern Decoration'
-        width={0}
-        height={0}
-        priority={true}
-        className='absolute top-0 left-0 z-[-1] w-full bg-repeat-y'
-      /> */}
+      {/* Grid background */}
+      <div className='pointer-events-none absolute inset-0 z-[-20] bg-[url("/Images/hero-grid-decoration.png")] bg-repeat' />
 
-      {/* <Image
-        src='/Images/header-ellipse-decoration.svg'
-        alt='header-ellipse-decoration'
-        width={0}
-        height={0}
-        priority={true}
-        className='absolute top-0 right-1/2 z-[-1] h-[201px] w-[461px] translate-x-[-51%] transform max-md:hidden'
-      /> */}
+      {/* Circle top-right */}
+      <div className='pointer-events-none absolute top-[18.17%] right-[8.6%] z-[-10] h-full w-full bg-[url("/Images/hero-circle-decoration.svg")] bg-right-top bg-repeat-x' />
 
-      {/* <Image
-        src='/Images/dot-decorations.svg'
-        alt='Dot Decoration'
-        width={0}
-        height={0}
-        priority={true}
-        className='absolute top-[127] left-[-37] z-[-1] h-145 w-full bg-repeat'
-      /> */}
+      {/* Waves bottom */}
+      <div
+        className='pointer-events-none absolute left-0 z-[-5] h-[380.7px] w-full bg-[url("/Images/waves.svg")] bg-contain bg-bottom bg-repeat-x'
+        style={{
+          bottom: generateClampInverse(-160, -80, 1440),
+        }}
+      />
 
-      {/* <Image
-        src='/Images/waves.svg'
-        alt='waves'
-        width={0}
-        height={0}
-        priority={true}
-        className='absolute top-140 left-0 z-[-1] w-full'
-      /> */}
+      {/* mask */}
+      <div
+        className='mask-radial-gradient pointer-events-none absolute top-0 left-0 z-[-10] w-full'
+        style={{ height: '2747px' }}
+      >
+        <style jsx>{`
+          .mask-radial-gradient {
+            background-image: radial-gradient(
+              circle at top left,
+              rgba(0, 0, 0, 0.8) 0%,
+              rgba(0, 0, 0, 0) 95%
+            );
+          }
+          @media (min-width: 768px) {
+            .mask-radial-gradient {
+              background-image: radial-gradient(
+                circle at top left,
+                rgba(0, 0, 0, 1) 0%,
+                rgba(0, 0, 0, 0) 95%
+              );
+            }
+          }
+        `}</style>
+      </div>
 
-      {/* <Image
+      {/* Ellipse SVG image (was in Image tag) */}
+      <Image
         src='/Images/hero-ellipse-decoration.svg'
         alt='hero-ellipse-decoration'
         width={0}
         height={0}
-        priority={true}
-        className='absolute top-0 right-0 z-[-1] h-full w-full border-2 border-blue-400 bg-right'
-      /> */}
+        priority
+        className='pointer-events-none absolute top-0 right-0 z-[-1] h-[1088] w-full bg-right'
+        style={{
+          height: generateClamp(1088, 1624, 1440),
+        }}
+      />
+
+      <div
+        aria-hidden='true'
+        className="pointer-events-none absolute top-0 right-1/2 z-[-1] hidden h-[201px] w-[461px] -translate-x-[51%] bg-[url('/Images/header-ellipse-decoration.svg')] bg-no-repeat md:block"
+      />
     </>
   );
 };
-
-export default HeroBgDecorations;

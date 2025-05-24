@@ -283,17 +283,17 @@ body {
   } */
   /* sampai sini punya hero */
 
-  /* .contact-decoration::before {
+  .contact-dot-grid::after {
     content: '';
-    @apply absolute right-0 -bottom-[15%] z-[-1] h-[1088px] w-[1418px] bg-[url('/Images/contact-decoration.svg')] bg-contain bg-bottom-right bg-no-repeat;
-  } */
+    @apply pointer-events-none absolute right-0 -bottom-[10.5%] z-[-1] h-[436px] w-[751px] bg-[url('/Images/contact-dot-grid-decoration.png')] bg-contain bg-no-repeat;
+  }
   .contact-decoration::before {
     content: '';
-    @apply absolute top-1/2 left-1/2 z-[-1] aspect-square size-[1418px] -translate-x-[20%] -translate-y-[30%] bg-[url('/Images/contact-ellipse-decoration.svg')] bg-cover bg-no-repeat;
+    @apply pointer-events-none absolute top-1/2 left-1/2 z-[-1] aspect-square size-[2316px] -translate-x-[25%] -translate-y-[35%] bg-[url('/Images/contact-ellipse-decoration.svg')] bg-cover bg-no-repeat;
   }
-  .contact-decoration2::before {
+  .contact-decorationinFAQ::before {
     content: '';
-    @apply absolute top-[-50%] left-1/2 z-[-1] aspect-square size-[716px] -translate-x-[20%] border-2 border-amber-200 bg-[url('/Images/contact-ellipse-decoration.svg')] bg-cover bg-no-repeat;
+    @apply pointer-events-none absolute top-1/2 left-1/2 z-[-1] aspect-square size-[2316px] -translate-x-[25%] -translate-y-[7%] bg-[url('/Images/contact-ellipse-decoration.svg')] bg-cover bg-no-repeat;
   }
 }
 

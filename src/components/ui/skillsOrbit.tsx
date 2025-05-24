@@ -56,7 +56,7 @@ const Icon = ({ angle, radius, src, isDesktop }: IconProps) => {
         transformOrigin: '50% 50%',
       }}
       animate={{ rotate: -360 }}
-      transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
+      transition={{ repeat: Infinity, duration: 15, ease: 'linear' }}
     >
       <Image
         src={src}
@@ -87,7 +87,7 @@ const SkillsOrbit = () => {
           transformOrigin: '50% 50%',
         }}
         animate={{ rotate: 360 }}
-        transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
+        transition={{ repeat: Infinity, duration: 15, ease: 'linear' }}
       >
         {/* Orbit Lines */}
         {sizes.map((s, i) => (

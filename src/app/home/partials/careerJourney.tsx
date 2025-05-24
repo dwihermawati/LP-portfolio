@@ -37,7 +37,7 @@ export const CareerJourney: React.FC = () => {
 
                 {!isLast && (
                   <motion.div
-                    className='from-secondary-200 to-primary-400 absolute top-0 left-1/2 h-[calc(100%+1rem)] w-1 origin-top -translate-x-1/2 bg-gradient-to-b md:h-[calc(100%+1.5rem)] md:w-[6px]'
+                    className='bg-gradient-purple-pink absolute top-0 left-1/2 h-[calc(100%+1rem)] w-1 origin-top -translate-x-1/2 md:h-[calc(100%+1.5rem)] md:w-[6px]'
                     initial={{ scaleY: 0 }}
                     whileInView={{ scaleY: 1 }}
                     viewport={{

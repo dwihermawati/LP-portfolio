@@ -3,7 +3,6 @@ import React from 'react';
 import { Card, Cards } from '@/components/ui/card';
 
 import { projectsData } from '@/constants/projects-data';
-
 import { generateClampInverse } from '@/function/generate-clamp-inverse';
 
 export const Projects: React.FC = () => {

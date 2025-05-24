@@ -2,6 +2,7 @@
 
 import emailjs from '@emailjs/browser';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { motion, useAnimation } from 'motion/react';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { BeatLoader } from 'react-spinners';
@@ -38,6 +39,12 @@ const ContactForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [showDialog, setShowDialog] = useState(false);
   const [variant, setVariant] = React.useState<'success' | 'error'>('success');
+
+  const controls = useAnimation();
+  const shakeAnimation = {
+    x: [0, -10, 10, -10, 10, 0],
+    transition: { duration: 0.4, ease: 'easeInOut' },
+  };
 
   const form = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
@@ -77,9 +84,12 @@ const ContactForm: React.FC = () => {
   return (
     <>
       <Form {...form}>
-        <form
+        <motion.form
           className='w-full space-y-4 md:space-y-5'
-          onSubmit={form.handleSubmit(onSubmit)}
+          onSubmit={form.handleSubmit(onSubmit, () => {
+            controls.start(shakeAnimation);
+          })}
+          animate={controls}
         >
           <FormField
             control={form.control}
@@ -131,7 +141,7 @@ const ContactForm: React.FC = () => {
           <Button disabled={loading} className='mt-4 w-full md:mt-5'>
             {loading ? <BeatLoader size={20} color='#fff' /> : 'Send'}
           </Button>
-        </form>
+        </motion.form>
       </Form>
       <FormStatusDialog
         open={showDialog}

@@ -7,7 +7,6 @@ import React, { useState } from 'react';
 import AboutExperience from '@/components/ui/AboutExperience';
 
 import { generateClamp } from '@/function/generate-clamp';
-
 import { cn } from '@/lib/utils';
 
 export const About: React.FC = () => {

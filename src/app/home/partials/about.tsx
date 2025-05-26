@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import AboutExperience from '@/components/ui/AboutExperience';
 
 import { cn } from '@/lib/utils';
+import { generateClamp } from '@/function/generate-clamp';
 
 export const About: React.FC = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -22,6 +23,7 @@ export const About: React.FC = () => {
     >
       <div
         className='flex-center bg-gradient-purple-pink relative h-31.75 w-full cursor-pointer overflow-hidden rounded-[12px] md:h-114.75 md:rounded-[24px]'
+        style={{ height: generateClamp(127, 459, 1224) }}
         onClick={handleClick}
       >
         <Image

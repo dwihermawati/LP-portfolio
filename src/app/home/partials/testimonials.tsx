@@ -4,6 +4,7 @@ import React from 'react';
 import { Marquee } from '@/components/ui/marquee';
 
 import { testimonialsData } from '@/constants/testimonials-data';
+import { generateClamp } from '@/function/generate-clamp';
 
 export const Testimonials: React.FC = () => {
   return (
@@ -73,7 +74,13 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         <div className='group-hover:animate-sweep-light absolute top-0 left-[-75%] h-full w-[250%] bg-white/50 opacity-0 blur-sm' />
       </div>
 
-      <div className='relative z-20 h-auto w-75.5 rounded-2xl bg-neutral-500 p-4 md:w-125 md:p-5'>
+      <div
+        className='relative z-20 h-auto rounded-2xl bg-neutral-500'
+        style={{
+          width: generateClamp(302, 500, 1224),
+          padding: generateClamp(16, 20, 1224),
+        }}
+      >
         <div className='flex-start gap-2 md:gap-4'>
           <Image
             src={profileSrc}
@@ -89,7 +96,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             </p>
           </div>
         </div>
-        <p className='text-sm-regular md:text-md-regular mt-3 line-clamp-4 text-neutral-200 md:mt-5'>
+        <p className='text-sm-regular md:text-md-regular mt-3 text-neutral-200 md:mt-5'>
           {description}
         </p>
       </div>

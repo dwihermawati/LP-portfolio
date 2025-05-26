@@ -240,10 +240,15 @@ body {
     box-shadow: 0 4px 24px 0 rgba(135, 70, 235, 0.32);
   }
 
-  .ellipse-skill::before {
+  /* .ellipse-skill::before {
     content: '';
-    @apply absolute top-1/2 right-1/2 z-[-1] h-[1969px] w-full translate-x-[28%] -translate-y-[38%] transform bg-[url('/Images/ellipse-skill.svg')] bg-contain bg-no-repeat;
-  }
+    @apply absolute right-[10.28%] bottom-[-8.97%] z-[-1] aspect-square h-auto transform border border-amber-200 bg-[url('/Images/ellipse-skill-decoration.svg')] bg-contain bg-no-repeat;
+    width: clamp(60.5rem, 136.74vw, 123.06rem);
+  } */
+  /* .ellipse-skill::before {
+    content: '';
+    @apply absolute right-[10.28%] bottom-[8.97%] z-[-1] size-full transform border border-amber-200 bg-[url('/Images/ellipse-skill-decoration.svg')] bg-contain bg-no-repeat;
+  } */
 
   /* punya hero */
   /* .header-ellipse-decoration::before {

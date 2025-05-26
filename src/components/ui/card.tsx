@@ -28,11 +28,18 @@ export const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div className='hover:shadow-purple-glow flex flex-1 basis-70 flex-col gap-3 transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-[1.01] md:gap-4'>
-      <Image
-        src={imageSrc}
-        alt={name}
-        className='h-full w-full cursor-pointer rounded-3xl object-contain md:rounded-4xl'
-      />
+      <div className='group relative'>
+        <Image
+          src={imageSrc}
+          alt={name}
+          className='size-full cursor-pointer rounded-3xl object-contain md:rounded-4xl'
+        />
+        <div className='flex-center bg-gradient-purple-pink absolute top-[56%] right-[18%] size-25 scale-0 rotate-[-5.57deg] cursor-pointer rounded-full p-0.5 opacity-0 transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100'>
+          <div className='text-md-semibold flex-center size-full rotate-[-5.57deg] rounded-full bg-neutral-500 p-2 text-center leading-none text-neutral-100'>
+            Detail
+          </div>
+        </div>
+      </div>
       <div className='flex flex-col gap-3 md:gap-10'>
         <div className='flex flex-col gap-2 md:gap-3'>
           <h4 className='text-lg-bold md:text-xl-bold hover:bg-gradient-purple-pink cursor-pointer bg-neutral-100 bg-clip-text text-transparent'>
@@ -60,11 +67,6 @@ export const Card: React.FC<CardProps> = ({
             Visit
           </Link>
           <GradientArrowIcon />
-          {/* <ArrowUpRight className='bg-gradient-purple-pink text-primary-200 h-6 w-6 cursor-pointer bg-clip-text' /> */}
-          {/* <Icon
-            icon='iconamoon:arrow-top-right-1-light'
-            className='bg-gradient-purple-pink h-6 w-6 cursor-pointer bg-clip-text text-transparent'
-          /> */}
         </div>
       </div>
     </div>

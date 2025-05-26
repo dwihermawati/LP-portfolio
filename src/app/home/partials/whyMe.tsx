@@ -8,8 +8,8 @@ import { whyMe } from '@/constants/why-me-data';
 export const WhyMe: React.FC = () => {
   return (
     <Section
-      title='What Sets Me Apart'
-      subtitle='A comparison of my approach and skills against typical programmers.'
+      title='Why I Stand Out'
+      subtitle='A showcase of my unique approach and skill set compared to conventional front-end developers'
     >
       <div className='rounded-3xl bg-neutral-500 px-2.5 py-6 md:px-6'>
         <div className='bg-gradient-purple-pink grid h-12 grid-cols-[3fr_1fr_1fr] items-center rounded-full px-2.5 text-center md:h-14 md:grid-cols-3 md:px-0'>

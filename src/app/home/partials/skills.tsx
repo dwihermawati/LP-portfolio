@@ -3,7 +3,7 @@ import React from 'react';
 import { Section } from '@/components/layouts/section';
 import SkillsBar from '@/components/ui/skillsBar';
 import SkillsOrbit from '@/components/ui/skillsOrbit';
-import { generateClamp } from '@/function/generate-clamp';
+
 import { generateClampInverse } from '@/function/generate-clamp-inverse';
 
 export const Skills: React.FC = () => {

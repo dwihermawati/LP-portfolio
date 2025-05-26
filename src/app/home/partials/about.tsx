@@ -6,8 +6,9 @@ import React, { useState } from 'react';
 
 import AboutExperience from '@/components/ui/AboutExperience';
 
-import { cn } from '@/lib/utils';
 import { generateClamp } from '@/function/generate-clamp';
+
+import { cn } from '@/lib/utils';
 
 export const About: React.FC = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);

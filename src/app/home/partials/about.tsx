@@ -18,11 +18,15 @@ export const About: React.FC = () => {
 
   return (
     <section
-      className='custom-container flex-center flex-col gap-10 py-10 md:gap-20 md:py-20'
+      className='custom-container flex-center flex-col'
       id='about'
+      style={{
+        paddingBlock: generateClamp(40, 80, 1224),
+        gap: generateClamp(40, 80, 1224),
+      }}
     >
       <div
-        className='flex-center bg-gradient-purple-pink relative h-31.75 w-full cursor-pointer overflow-hidden rounded-[12px] md:h-114.75 md:rounded-[24px]'
+        className='flex-center bg-gradient-purple-pink relative w-full cursor-pointer overflow-hidden rounded-[12px] md:rounded-[24px]'
         style={{ height: generateClamp(127, 459, 1224) }}
         onClick={handleClick}
       >
@@ -58,13 +62,25 @@ export const About: React.FC = () => {
       </div>
 
       <div className='flex w-full flex-wrap justify-between gap-3 md:gap-6'>
-        <h2 className='display-sm-extrabold md:display-2xl-extrabold text-neutral-100'>
+        <h2
+          className='font-extrabold tracking-normal text-neutral-100 md:tracking-[-0.02em]'
+          style={{
+            fontSize: generateClamp(28, 48, 1224),
+            lineHeight: generateClamp(38, 60, 1224),
+          }}
+        >
           Who am I?
         </h2>
-        <p className='text-sm-regular md:text-md-regular max-w-175 text-neutral-200'>
+        <p
+          className='font-regular text-neutral-200 lg:max-w-175'
+          style={{
+            fontSize: generateClamp(14, 16, 1224),
+            lineHeight: generateClamp(24, 30, 1224),
+          }}
+        >
           Hi, I’m Alex, a Front-End Developer & Web Programming Instructor based
           in Jakarta. With over{' '}
-          <span className='text-sm-bold md:text-md-bold text-neutral-100'>
+          <span className='font-bold text-neutral-100'>
             3 years of experience
           </span>
           , I specialize in crafting interactive, responsive, and user-friendly

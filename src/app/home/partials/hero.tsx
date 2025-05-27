@@ -52,11 +52,11 @@ export const Hero: React.FC = () => {
           </div>
         </div>
         <h1
-          className='text-center font-bold text-neutral-100 md:font-extrabold'
+          className='text-center font-bold tracking-[-0.02em] text-neutral-100 md:font-extrabold md:tracking-normal'
           style={{
             fontSize: generateClamp(40, 60, 1224),
             lineHeight: generateClamp(48, 72, 1224),
-            letterSpacing: generateClamp(-0.32, 0, 1224),
+            // letterSpacing: generateClamp(-0.32, 0, 1224),
           }}
         >
           I am a

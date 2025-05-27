@@ -25,7 +25,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.0109689"
      inkscape:cx="181.01447"
-     inkscape:cy="273.5"
+     inkscape:cy="273.50001"
      inkscape:window-width="1366"
      inkscape:window-height="745"
      inkscape:window-x="-8"
@@ -40,7 +40,7 @@
      transform="rotate(180 222.626 82.6264)"
      fill="#545357"
      id="circle1"
-     style="opacity:0.4" />
+     style="opacity:1" />
   <circle
      opacity="1"
      cx="3.62589"
@@ -49,7 +49,7 @@
      transform="rotate(180 3.62589 3.62638)"
      fill="#545357"
      id="circle2"
-     style="opacity:0.4" />
+     style="opacity:1" />
   <circle
      opacity="1"
      cx="358.626"
@@ -58,7 +58,7 @@
      transform="rotate(180 358.626 239.626)"
      fill="#545357"
      id="circle3"
-     style="opacity:0.4" />
+     style="opacity:1" />
   <circle
      opacity="1"
      cx="351.626"
@@ -67,7 +67,7 @@
      transform="rotate(180 351.626 389.626)"
      fill="#545357"
      id="circle4"
-     style="opacity:0.4" />
+     style="opacity:1" />
   <circle
      opacity="1"
      cx="130.626"
@@ -76,5 +76,5 @@
      transform="rotate(180 130.626 542.626)"
      fill="#545357"
      id="circle5"
-     style="opacity:0.4" />
+     style="opacity:1" />
 </svg>
